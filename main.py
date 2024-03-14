@@ -1,6 +1,6 @@
 ## main.py
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
 from calculator import Calculator
 
 app = Flask(__name__)
