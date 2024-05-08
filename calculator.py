@@ -62,13 +62,3 @@ class Calculator:
         future extensibility.
         """
         pass  # No state to reset; method is here for potential future use.
-
-
-if __name__ == '__main__':
-    calculator = Calculator()
-    print(calculator.add(1, 2))  # 3
-    print(calculator.subtract(5, 3))  # 2
-    print(calculator.multiply(4, 6))  # 24
-    print(calculator.divide(8, 0))
-    calculator.reset()
-    print("Calculator has been reset.")
