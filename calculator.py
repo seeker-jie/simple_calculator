@@ -51,7 +51,7 @@ class Calculator:
             ValueError: If the second number is zero.
         """
         if number2 == 0:
-            raise ValueError("Cannot divide by zero.")
+            return 'Error: Cannot divide by zero.'
         return number1 / number2
 
     def reset(self) -> None:
