@@ -1,6 +1,4 @@
-## main.py
-
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from calculator import Calculator
 
 app = Flask(__name__)
@@ -44,5 +42,7 @@ def reset():
     main_instance.calculator.reset()
     return jsonify(message="Calculator reset"), 200
 
-if __name__ == '__main__':
+@app.route('/')
+def home():
+    return render_template('index.html')
     main_instance.run()
